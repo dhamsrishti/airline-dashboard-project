@@ -1,0 +1,11 @@
+gcs:
+  bucket_name: "airline-delays-bucket"
+  source_file: "data/Airline_Dataset.csv"
+  destination_blob: "raw/airline_delays.csv"
+
+bigquery:
+  project_id: "your-gcp-project-id"
+  dataset_id: "my_airline_dataset"
+  table_id: "airline_delays"
+  gcs_uri: "gs://airline-delays-bucket/raw/airline_delays.csv"
+  clean_table_id: "clean_airline_delays"
