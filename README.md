@@ -37,8 +37,8 @@ This project builds an **end-to-end data pipeline** on **Google Cloud** to analy
    ```bash
    pip install -r requirements.txt
 
-python scripts/upload_to_gcs.py
-python scripts/load_to_bigquery.py
+2. Run below command
+python scripts/main.py
 
 
 
