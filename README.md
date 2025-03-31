@@ -42,4 +42,20 @@ python scripts/load_to_bigquery.py
 
 
 
+---
+
+## **📊 Dashboard Visuals**  
+
+### **Tile 1: Categorical Distribution Graph**
+🔹 **Bar Chart - Flight Status Distribution**  
+- Shows how many flights were **Delayed, On Time, or Canceled**.  
+
+### **Tile 2: Time-Series Graph**
+🔹 **Line Chart - Delays Over Time**  
+- Shows how delays change **daily or monthly** over time.  
+
+
+
+
+
 
