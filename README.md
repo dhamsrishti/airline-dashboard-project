@@ -12,3 +12,4 @@ Examine the distribution of delays across different airports and flight routes t
 
 The goal is to provide actionable insights for airline operations and improve the customer experience by understanding how delays impact different regions, airlines, and times of the year. Ultimately, this project will visualize these insights on an interactive dashboard, providing a comprehensive view of flight delays and trends.
 
+![AirlineProject_HL_architecture](https://github.com/user-attachments/assets/c08b3fcc-9694-41bf-a698-1575002fca26)
