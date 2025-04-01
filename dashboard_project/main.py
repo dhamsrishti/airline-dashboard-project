@@ -1,6 +1,7 @@
 from upload_to_gcs import upload_to_gcs
 from load_to_bigquery import load_data_to_bigquery
 from data_validation import validate_bigquery_data
+from visualization import generate_visualizations  # New import
 from logging_config import setup_logger
 
 logger = setup_logger()
@@ -21,6 +22,14 @@ def run_pipeline():
     # Step 3: Validate Data
     if not validate_bigquery_data():
         logger.error("Data Validation Failed.")
+        return False
+    
+    # Step 4: Generate Visualizations (New Step)
+    try:
+        generate_visualizations()
+        logger.info("📊 Visualizations generated successfully")
+    except Exception as e:
+        logger.error(f"❌ Visualization generation failed: {e}")
         return False
     
     logger.info("✅ Pipeline Completed Successfully!")
