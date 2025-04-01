@@ -1,6 +1,6 @@
 from google.cloud import bigquery
 import yaml
-from ..logging_config import setup_logger  # Relative import
+from logging_config import setup_logger  # Absolute import from root
 
 logger = setup_logger()
 
