@@ -11,10 +11,10 @@ jobs:
         uses: actions/setup-python@v2
         with:
           python-version: "3.9"
-      - name: Install package and dependencies
+      - name: Install package
         run: |
-          pip install -e .
-          pip install -r requirements.txt
+            pip install -e .
+            pip install -r requirements.txt
       - name: Run tests
         run: |
           pytest tests/
