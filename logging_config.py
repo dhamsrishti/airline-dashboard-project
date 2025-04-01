@@ -1,4 +1,4 @@
- def setup_logger():
+def setup_logger():
     import logging
     from pathlib import Path
     
@@ -14,3 +14,6 @@
         ]
     )
     return logging.getLogger(__name__)
+
+def setup_logging():  # Add this if referenced in upload_to_gcs.py
+    return setup_logger()
