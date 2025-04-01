@@ -10,8 +10,8 @@ def load_config():
     with open(config_path, "r") as f:
         return yaml.safe_load(f)
 
-def upload_to_gcs(bucket_name, source_file, destination_blob):
-    """Uploads a file to GCS with error handling."""
+def upload_to_gcs(bucket_name: str, source_file: str, destination_blob: str) -> bool:
+    """Uploads a file to Google Cloud Storage."""
     try:
         client = storage.Client()
         bucket = client.bucket(bucket_name)
@@ -22,7 +22,7 @@ def upload_to_gcs(bucket_name, source_file, destination_blob):
         return True
     except Exception as e:
         logger.error(f"❌ Failed to upload to GCS: {e}")
-        return False
+        raise  # Re-raise the exception instead of returning False
 
 if __name__ == "__main__":
     config = load_config()
