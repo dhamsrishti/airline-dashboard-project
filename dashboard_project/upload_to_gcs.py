@@ -1,7 +1,7 @@
 from google.cloud import storage
 import yaml
 from pathlib import Path
-from logging_config import setup_logging
+from logging_config import setup_logger as setup_logging
 
 logger = setup_logging()
 
