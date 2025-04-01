@@ -38,7 +38,7 @@ This project builds an **end-to-end data pipeline** on **Google Cloud** to analy
    pip install -r requirements.txt
 
 2. Run below command
-python scripts/main.py
+python dashboard_project/main.py
 
 
 
@@ -48,11 +48,20 @@ python scripts/main.py
 
 ### **Tile 1: Categorical Distribution Graph**
 🔹 **Bar Chart - Flight Status Distribution**  
-- Shows how many flights were **Delayed, On Time, or Canceled**.  
+- Shows how many flights were **Delayed, On Time, or Canceled**.
+  ![Bar](https://github.com/user-attachments/assets/7c9640b3-edd0-4fb8-9785-66617690c022)
+
 
 ### **Tile 2: Time-Series Graph**
 🔹 **Line Chart - Delays Over Time**  
 - Shows how delays change **daily or monthly** over time.  
+
+![Line](https://github.com/user-attachments/assets/d5295131-fe27-48b3-86f0-3f57613e8704)
+
+![pie](https://github.com/user-attachments/assets/1ec74a60-ce6e-4fc0-aa36-9fd5f0ea2c3f)
+
+![Top!0](https://github.com/user-attachments/assets/8a90f0c1-2f86-480c-9722-ea26b7e95b80)
+
 
 
 
