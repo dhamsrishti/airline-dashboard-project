@@ -1,6 +1,6 @@
 from google.cloud import bigquery
 import yaml
-from airline_dashboard_project.logging_config import setup_logger  # Absolute import
+from ..logging_config import setup_logger  # Relative import
 
 logger = setup_logger()
 
