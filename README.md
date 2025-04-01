@@ -26,21 +26,13 @@ This project builds an **end-to-end data pipeline** on **Google Cloud** to analy
 - **Python** - Data processing (ETL)
 - **Google Data Studio** - Dashboard visualization
 
-## 📂 File Structure
-
-
-## 📊 Dashboard Visuals
-(Attach dashboard screenshots here)
-
 ## 🛠️ Setup Instructions
 1. Install dependencies:  
    ```bash
    pip install -r requirements.txt
 
-2. Run below command
+2. Run below command:
 python dashboard_project/main.py
-
-
 
 ---
 
