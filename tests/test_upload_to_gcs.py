@@ -22,7 +22,7 @@ def test_upload_to_gcs_success(mock_client):
 def test_upload_to_gcs_failure(mock_client):
     mock_client.side_effect = Exception("GCS Error")
     
-    with pytest.raises(Exception):
+    with pytest.raises(Exception, match="GCS Error"):
         upload_to_gcs("test-bucket", "test-file.csv", "test-destination.csv")
 
 # Remove these tests as they belong in test_load_to_bigquery.py
