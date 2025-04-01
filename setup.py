@@ -8,6 +8,7 @@ setup(
         '': ['*.yaml', '*.sql', '*.csv'],
     },
     include_package_data=True,
+    py_modules=['logging_config'],  
     install_requires=[
         "google-cloud-storage",
         "google-cloud-bigquery",
