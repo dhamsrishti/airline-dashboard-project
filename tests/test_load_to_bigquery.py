@@ -1,7 +1,5 @@
+from dashboard_project.load_to_bigquery import load_data_to_bigquery
 from unittest.mock import patch, MagicMock
-# tests/test_load_to_bigquery.py
-from dashboard_project.load_to_bigquery import load_data_to_bigquery
-from dashboard_project.load_to_bigquery import load_data_to_bigquery
 import pytest
 
 @patch('google.cloud.bigquery.Client')
